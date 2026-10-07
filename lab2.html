@@ -1,1 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Morgan | Portfolio</title>
+    <style>
+        /* CSS to style our layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #660710;
+        }
+        header {
+            background-color: #660710;
+            color: #f9f9f9;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 5px 0 20px;
+            color: #ccc;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
 
+    <header>
+        <h1>Hagar Samaha</h1>
+        <p>CAIE Student</p>
+        <nav>
+            <a href="#about">About</a> | 
+            <a href="#projects">Projects</a> | 
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <style>
+        /* Style for standard section wrappers */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .about-section {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .about-section h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        .about-section p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+    </style>
+
+    <div class="container" id="about">
+        <section class="about-section">
+            <h2>About Me</h2>
+            <p>
+                Hello! My name is Hagar Samaha, a currrent CAIE student at ASUENG and this is my porotofolio for the lab of the CSE343 course, Web Development!
+            </p>
+        </section>
+
+        <style>
+        /* Two-column layout */
+        .content-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        .projects-area {
+            flex: 2; /* takes up roughly 2/3 of space */
+            min-width: 300px;
+        }
+        .contact-area {
+            flex: 1; /* takes up roughly 1/3 of space */
+            min-width: 250px;
+        }
+        
+        /* Grid for cards */
+        .projects-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        /* Stylized cards */
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            flex: 1;
+            min-width: 200px;
+            border: 1px solid #eaeaea;
+        }
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.5;
+        }
+    </style>
+
+        <div class="content-grid">
+            <!-- Left Side: Projects -->
+            <section class="projects-area" id="projects">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="card">
+                        <h3>01. Lab Automation System</h3>
+                        <p>A scripting tool developed to streamline data collection and analysis.</p>
+                    </div>
+                    <div class="card">
+                        <h3>02. Weather Web App</h3>
+                        <p>An interactive interface using APIs to display real-time forecast data.</p>
+                    </div>
+                    <div class="card">
+                        <h3>03. Task Manager</h3>
+                        <p>A responsive web application to track project goals and deadlines.</p>
+                    </div>
+                </div>
+            </section>
+
+            <style>
+                /* Style the Form fields */
+                .form-group {
+                    margin-bottom: 15px;
+                }
+                .form-group input, 
+                .form-group textarea {
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    box-sizing: border-box; /* keeps padding from expanding past widths */
+                }
+                .form-group textarea {
+                    height: 100px;
+                    resize: vertical;
+                }
+                .submit-btn {
+                    background-color: #22252a;
+                    color: white;
+                    border: none;
+                    padding: 12px 20px;
+                    width: 100%;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 1rem;
+                }
+                .submit-btn:hover {
+                    background-color: #333;
+                }
+            </style>
+
+            <!-- Right Side: Contact -->
+            <section class="contact-area" id="contact">
+                <h2>Contact Me</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message (optional)"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Message</button>
+                </form>
+            </section>
+        </div> <!-- End of content-grid -->
+    </div> <!-- End of container -->
+
+    <style>
+        footer {
+            background-color: #22252a;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 0.9rem;
+        }
+    </style>
+
+    <footer>
+        <p>&copy; 2026 Alex Morgan. Built for Web Dev Lab</p>
+    </footer>
+
+</body>
+</html>
