@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="UTF-8">
+    <title> Reservation System; Lab 3</title>
+    <style>
+       body{
+       font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fcf5eb;
+            color: #660710;
+            align-items: center;
+            text-align: center;
+
+       }
+       
+        h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <style> 
+ .mybtn{
+            background-color: #660710;
+            color: #fcf5eb;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .mybtn:hover{
+            background-color: #fcf5eb;
+            color: #660710;
+            border: 1px solid #660710;
+        }
+    .myinput{
+            padding: 10px;
+            width: 200px;
+        }
+    </style>
+       
+<h1 id="title">Welcome!</h1>
+<input class="myinput" id="name" type="text" placeholder="Enter your name">
+<button class="mybtn" id="submit">Submit</button>
+<ul id="reservation-list"></ul>
+<script>
+function addName(){
+    const input = document.getElementById('name');
+    const name = input.value.trim();
+    if(!name){
+        alert('Please enter a name');
+        return;
+    }
+    document.getElementById('title').textContent = `Welcome, ${name}!`;
+    const li = document.createElement('li');
+    li.textContent = name;
+    document.getElementById('reservation-list').appendChild(li);
+    input.value = '';
+}
+
+function removeName(event){
+    if(event.target.tagName === 'LI'){
+        const name = event.target.textContent;
+        document.getElementById('title').textContent = `Goodbye, ${name}, Have a Great Day!`;
+        event.target.remove();
+    }
+}
+document.getElementById('submit').addEventListener('click', addName);
+document.getElementById('reservation-list').addEventListener('click', removeName);
+</script>     
+</body>
+</html>
